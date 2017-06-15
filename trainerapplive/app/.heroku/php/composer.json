@@ -1,0 +1,123 @@
+{
+    "config": {
+        "cache-files-ttl": 0,
+        "discard-changes": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": false,
+    "provide": {
+        "heroku-sys\/heroku": "16.2017.06.15"
+    },
+    "require": {
+        "composer.json\/composer.lock": "dev-b1e2241ffaaf4be73b98ba9a1f6d91ea",
+        "aoberoi\/json-works": "v1.0.2",
+        "guzzle\/guzzle": "v3.9.3",
+        "icanboogie\/storage": "v1.1.1",
+        "opentok\/opentok": "v2.2.3",
+        "slim\/slim": "2.6.3",
+        "symfony\/event-dispatcher": "v2.8.22",
+        "heroku-sys\/apache": "^2.4.10",
+        "heroku-sys\/nginx": "~1.8.0"
+    },
+    "require-dev": {},
+    "repositories": [
+        {
+            "packagist": false
+        },
+        {
+            "type": "path",
+            "url": "\/app\/tmp\/buildpacks\/2eb21e9db12e182f49d4d2f512fbbb1b5c0e2f2cc7316a571d4c31b476916dc7f9372d5a597490761325ac6b221f8f381804151a7b10729a06a6f76e022e52de\/support\/installer\/",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "composer",
+            "url": "https:\/\/lang-php.s3.amazonaws.com\/dist-heroku-16-stable\/"
+        },
+        {
+            "type": "package",
+            "package": [
+                {
+                    "type": "metapackage",
+                    "name": "aoberoi\/json-works",
+                    "version": "v1.0.2",
+                    "require": {
+                        "heroku-sys\/php": ">=5.3.2"
+                    },
+                    "replace": [],
+                    "provide": [],
+                    "conflict": []
+                },
+                {
+                    "type": "metapackage",
+                    "name": "guzzle\/guzzle",
+                    "version": "v3.9.3",
+                    "require": {
+                        "heroku-sys\/ext-curl": "*",
+                        "heroku-sys\/php": ">=5.3.3"
+                    },
+                    "replace": [],
+                    "provide": [],
+                    "conflict": []
+                },
+                {
+                    "type": "metapackage",
+                    "name": "icanboogie\/storage",
+                    "version": "v1.1.1",
+                    "require": {
+                        "heroku-sys\/php": ">=5.5.0"
+                    },
+                    "replace": [],
+                    "provide": [],
+                    "conflict": []
+                },
+                {
+                    "type": "metapackage",
+                    "name": "opentok\/opentok",
+                    "version": "v2.2.3",
+                    "require": {
+                        "heroku-sys\/php": ">=5.0.0"
+                    },
+                    "replace": [],
+                    "provide": [],
+                    "conflict": []
+                },
+                {
+                    "type": "metapackage",
+                    "name": "slim\/slim",
+                    "version": "2.6.3",
+                    "require": {
+                        "heroku-sys\/php": ">=5.3.0"
+                    },
+                    "replace": [],
+                    "provide": [],
+                    "conflict": []
+                },
+                {
+                    "type": "metapackage",
+                    "name": "symfony\/event-dispatcher",
+                    "version": "v2.8.22",
+                    "require": {
+                        "heroku-sys\/php": ">=5.3.9"
+                    },
+                    "replace": [],
+                    "provide": [],
+                    "conflict": []
+                },
+                {
+                    "type": "metapackage",
+                    "name": "composer.json\/composer.lock",
+                    "version": "dev-b1e2241ffaaf4be73b98ba9a1f6d91ea",
+                    "require": {
+                        "heroku-sys\/php": ">=5.4.0",
+                        "heroku-sys\/ext-apcu": "*"
+                    },
+                    "replace": [],
+                    "provide": [],
+                    "conflict": []
+                }
+            ]
+        }
+    ]
+}

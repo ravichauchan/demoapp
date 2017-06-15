@@ -1,0 +1,269 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "cb22d2323df2e1f9a20a1698a6f705ca",
+    "packages": [
+        {
+            "name": "aoberoi/json-works",
+            "version": "v1.0.2",
+            "require": {
+                "heroku-sys/php": ">=5.3.2"
+            },
+            "type": "metapackage"
+        },
+        {
+            "name": "composer.json/composer.lock",
+            "version": "dev-b1e2241ffaaf4be73b98ba9a1f6d91ea",
+            "require": {
+                "heroku-sys/ext-apcu": "*",
+                "heroku-sys/php": ">=5.4.0"
+            },
+            "type": "metapackage"
+        },
+        {
+            "name": "guzzle/guzzle",
+            "version": "v3.9.3",
+            "require": {
+                "heroku-sys/ext-curl": "*",
+                "heroku-sys/php": ">=5.3.3"
+            },
+            "type": "metapackage"
+        },
+        {
+            "name": "heroku-sys/apache",
+            "version": "2.4.20",
+            "dist": {
+                "type": "heroku-sys-tar",
+                "url": "https://lang-php.s3.amazonaws.com/dist-heroku-16-stable/apache-2.4.20.tar.gz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "heroku-sys/heroku": "^16.0.0",
+                "heroku/installer-plugin": "^1.2.0"
+            },
+            "type": "heroku-sys-webserver",
+            "extra": {
+                "export": "bin/export.apache2.sh",
+                "profile": "bin/profile.apache2.sh"
+            },
+            "time": "2017-02-16T16:35:21+00:00"
+        },
+        {
+            "name": "heroku-sys/ext-apcu",
+            "version": "5.1.8",
+            "dist": {
+                "type": "heroku-sys-tar",
+                "url": "https://lang-php.s3.amazonaws.com/dist-heroku-16-stable/extensions/no-debug-non-zts-20160303/apcu-5.1.8.tar.gz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "heroku-sys/heroku": "^16.0.0",
+                "heroku-sys/php": "7.1.*",
+                "heroku/installer-plugin": "^1.2.0"
+            },
+            "conflict": {
+                "heroku-sys/hhvm": "*"
+            },
+            "replace": {
+                "heroku-sys/ext-apc": "self.version"
+            },
+            "type": "heroku-sys-php-extension",
+            "extra": {
+                "config": "etc/php/conf.d/apcu-apc.ini-dist"
+            },
+            "time": "2017-01-19T04:54:28+00:00"
+        },
+        {
+            "name": "heroku-sys/nginx",
+            "version": "1.8.1",
+            "dist": {
+                "type": "heroku-sys-tar",
+                "url": "https://lang-php.s3.amazonaws.com/dist-heroku-16-stable/nginx-1.8.1.tar.gz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "heroku-sys/heroku": "^16.0.0",
+                "heroku/installer-plugin": "^1.2.0"
+            },
+            "type": "heroku-sys-webserver",
+            "extra": {
+                "export": "bin/export.nginx.sh",
+                "profile": "bin/profile.nginx.sh"
+            },
+            "time": "2016-11-08T23:29:34+00:00"
+        },
+        {
+            "name": "heroku-sys/php",
+            "version": "7.1.3",
+            "dist": {
+                "type": "heroku-sys-tar",
+                "url": "https://lang-php.s3.amazonaws.com/dist-heroku-16-stable/php-7.1.3.tar.gz",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "heroku-sys/heroku": "^16.0.0",
+                "heroku/installer-plugin": "^1.2.0"
+            },
+            "conflict": {
+                "heroku-sys/hhvm": "*"
+            },
+            "replace": {
+                "heroku-sys/ext-bcmath": "self.version",
+                "heroku-sys/ext-bz2": "self.version",
+                "heroku-sys/ext-calendar": "self.version",
+                "heroku-sys/ext-ctype": "self.version",
+                "heroku-sys/ext-curl": "self.version",
+                "heroku-sys/ext-date": "self.version",
+                "heroku-sys/ext-dom": "20031129",
+                "heroku-sys/ext-exif": "0",
+                "heroku-sys/ext-fileinfo": "1.0.5",
+                "heroku-sys/ext-filter": "self.version",
+                "heroku-sys/ext-ftp": "self.version",
+                "heroku-sys/ext-gd": "self.version",
+                "heroku-sys/ext-gettext": "self.version",
+                "heroku-sys/ext-gmp": "self.version",
+                "heroku-sys/ext-hash": "1.0",
+                "heroku-sys/ext-iconv": "self.version",
+                "heroku-sys/ext-imap": "self.version",
+                "heroku-sys/ext-intl": "1.1.0",
+                "heroku-sys/ext-json": "1.5.0",
+                "heroku-sys/ext-ldap": "self.version",
+                "heroku-sys/ext-libxml": "self.version",
+                "heroku-sys/ext-mbstring": "self.version",
+                "heroku-sys/ext-mcrypt": "self.version",
+                "heroku-sys/ext-mysqli": "self.version",
+                "heroku-sys/ext-mysqlnd": "0",
+                "heroku-sys/ext-openssl": "self.version",
+                "heroku-sys/ext-pcntl": "self.version",
+                "heroku-sys/ext-pcre": "self.version",
+                "heroku-sys/ext-pdo": "self.version",
+                "heroku-sys/ext-pdo_mysql": "self.version",
+                "heroku-sys/ext-pdo_pgsql": "self.version",
+                "heroku-sys/ext-pdo_sqlite": "self.version",
+                "heroku-sys/ext-pgsql": "self.version",
+                "heroku-sys/ext-phar": "2.0.2",
+                "heroku-sys/ext-posix": "self.version",
+                "heroku-sys/ext-readline": "self.version",
+                "heroku-sys/ext-reflection": "self.version",
+                "heroku-sys/ext-session": "self.version",
+                "heroku-sys/ext-shmop": "self.version",
+                "heroku-sys/ext-simplexml": "self.version",
+                "heroku-sys/ext-soap": "self.version",
+                "heroku-sys/ext-sockets": "self.version",
+                "heroku-sys/ext-spl": "self.version",
+                "heroku-sys/ext-sqlite3": "0.7-dev",
+                "heroku-sys/ext-tokenizer": "self.version",
+                "heroku-sys/ext-xml": "self.version",
+                "heroku-sys/ext-xmlreader": "self.version",
+                "heroku-sys/ext-xmlrpc": "self.version",
+                "heroku-sys/ext-xmlwriter": "self.version",
+                "heroku-sys/ext-xsl": "self.version",
+                "heroku-sys/ext-zend-opcache": "self.version",
+                "heroku-sys/ext-zip": "1.13.5",
+                "heroku-sys/ext-zlib": "self.version",
+                "heroku-sys/php-64bit": "self.version"
+            },
+            "type": "heroku-sys-php",
+            "extra": {
+                "export": "bin/export.php.sh",
+                "profile": "bin/profile.php.sh",
+                "shared": {
+                    "heroku-sys/ext-bcmath": true,
+                    "heroku-sys/ext-calendar": true,
+                    "heroku-sys/ext-exif": true,
+                    "heroku-sys/ext-ftp": true,
+                    "heroku-sys/ext-gd": true,
+                    "heroku-sys/ext-gettext": true,
+                    "heroku-sys/ext-gmp": true,
+                    "heroku-sys/ext-imap": true,
+                    "heroku-sys/ext-intl": true,
+                    "heroku-sys/ext-ldap": true,
+                    "heroku-sys/ext-mbstring": true,
+                    "heroku-sys/ext-mcrypt": true,
+                    "heroku-sys/ext-pcntl": true,
+                    "heroku-sys/ext-pdo_sqlite": true,
+                    "heroku-sys/ext-shmop": true,
+                    "heroku-sys/ext-soap": true,
+                    "heroku-sys/ext-sqlite3": true,
+                    "heroku-sys/ext-xmlrpc": true,
+                    "heroku-sys/ext-xsl": true
+                }
+            },
+            "time": "2017-03-16T19:27:35+00:00"
+        },
+        {
+            "name": "heroku/installer-plugin",
+            "version": "1.2.1",
+            "dist": {
+                "type": "path",
+                "url": "/app/tmp/buildpacks/2eb21e9db12e182f49d4d2f512fbbb1b5c0e2f2cc7316a571d4c31b476916dc7f9372d5a597490761325ac6b221f8f381804151a7b10729a06a6f76e022e52de/support/installer",
+                "reference": "cc7779f0b474fc2eda9c4aeb553e1801a079a4e6",
+                "shasum": null
+            },
+            "require": {
+                "composer-plugin-api": "^1.0.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Heroku\\Buildpack\\PHP\\ComposerInstallerPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Heroku\\Buildpack\\PHP\\": "src/"
+                }
+            },
+            "transport-options": {
+                "symlink": false
+            }
+        },
+        {
+            "name": "icanboogie/storage",
+            "version": "v1.1.1",
+            "require": {
+                "heroku-sys/php": ">=5.5.0"
+            },
+            "type": "metapackage"
+        },
+        {
+            "name": "opentok/opentok",
+            "version": "v2.2.3",
+            "require": {
+                "heroku-sys/php": ">=5.0.0"
+            },
+            "type": "metapackage"
+        },
+        {
+            "name": "slim/slim",
+            "version": "2.6.3",
+            "require": {
+                "heroku-sys/php": ">=5.3.0"
+            },
+            "type": "metapackage"
+        },
+        {
+            "name": "symfony/event-dispatcher",
+            "version": "v2.8.22",
+            "require": {
+                "heroku-sys/php": ">=5.3.9"
+            },
+            "type": "metapackage"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "composer.json/composer.lock": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
